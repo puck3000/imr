@@ -1,22 +1,30 @@
 // fonts
 html, body, h1, h2, p, a, li,
 	font-family: Arial
-
+	
 img
 	max-width: 100%
 
+body
+	background: black
+
+	
 main
 	center(1400px)
+	margin-top: 1rem
 	text-align: center
 	header 
 		img
-			max-width: 80%
-			max-height: 20vh
+			max-width: 100%
+			// max-height: 20vh
 	.mainpic
 		img	
 			max-height: 60vh
 			max-width: 100%
 	.content
+		img 
+			max-width: 100%
+		color: white
 		margin: auto
 		// mobile
 		max-width: 100%
@@ -25,41 +33,68 @@ main
 			padding: 0
 			max-width: 50%
 		@media(min-width: 600px)
-			max-width: 30%
-			
+			max-width: 30%	
 		ul 
 			padding: 0
 			list-style: none
 		h2
-			border: solid black .2rem
+			border-top: solid white .2rem
+			border-bottom: solid white .2rem
 			text-transform: uppercase
 			text-align: center
 			&:hover
-				background: black
-				color: white
+				background: white
+				color: black
 				a 
-					color: white
+					color: black
 			&.trenner
 				border: none
 				&:hover
 					background: none
-					color: black
+					color: white
 					a 
-						color: black
+						color: white
 		#mc_embed_signup form
 			padding: 0
 			margin: 0
 			
 			.asterisk
-				color: black
+				color: white
 			.mc-field-group
 				margin: 0	
 				width: 100%
 a 
 	text-decoration: none
-	color: black
+	color: white
 	&:hover
-		color: white
+		color: black
+		p.inhalt
+			color: white
+
+/*
+ **********************
+* Specifics
+ **********************
+*/
+
+// Test Days
+
+section#testdays
+	background: yellow
+	h2
+		a 
+			color: black
+		background: none
+		border-top: solid yellow .2rem
+		border-bottom: solid yellow .2rem
+		&:hover 
+			background: none
+			a 
+				color: black
+				
+	p 
+		color: black
+	
 
 	
 // /*
