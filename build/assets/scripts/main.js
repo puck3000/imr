@@ -9,7 +9,7 @@ $(function() {
 
  
 
-	var  sectionContent = $("section > p");
+	var  sectionContent = $("section > article");
 		sectionTrigger = $("section > h2");
 
 // hide subdetails on load:
