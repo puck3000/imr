@@ -19,6 +19,7 @@ $(function() {
 // give clicked subnav-link  activeNav class
 	$(sectionTrigger).click(function(e) {
 		e.preventDefault();
+		$(this).toggleClass('active');
 		$(this).next().slideToggle();
 
 	});

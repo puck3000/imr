@@ -31,17 +31,20 @@ main
 		padding: 0 1rem
 		@media(min-width: 35rem)
 			padding: 0
-			max-width: 50%
-		@media(min-width: 600px)
+			max-width: 60%
+		@media(min-width: 1000px)
 			max-width: 30%	
 		ul 
 			padding: 0
 			list-style: none
+			margin-top: 0
 		h2
 			border-top: solid white .2rem
-			border-bottom: solid white .2rem
+			&.borderButt
+				border-bottom: solid white .2rem
 			text-transform: uppercase
 			text-align: center
+			margin: 0
 			&:hover
 				background: white
 				color: black
@@ -54,15 +57,26 @@ main
 					color: white
 					a 
 						color: white
+		h3
+			&:hover
+				background: white
+				color: black
+				a 
+					color: black
+			
+
 		#mc_embed_signup form
 			padding: 0
 			margin: 0
 			
 			.asterisk
-				color: white
+				color: black
 			.mc-field-group
 				margin: 0	
 				width: 100%
+			.indicates-required
+				.asterisk
+					color: white
 a 
 	text-decoration: none
 	color: white
@@ -70,17 +84,21 @@ a
 		color: black
 		p.inhalt
 			color: white
-
+			
+footer
+	@media(max-width: 35rem)
+		col(1/2)
+	@media(min-width: 35rem)
+		col(1/4)
+	@media(min-width: 1600px)
+		col(1/6)
 /*
  **********************
 * Specifics
  **********************
 */
 
-
-// noHover
-
-			
+// noHover			
 main 
 	.content 
 		h2.noHov
@@ -91,9 +109,11 @@ main
 					color: black
 
 // Test Days
-
 section#testdays
 	background: yellow
+	padding: 0 .5rem
+	article
+		text-align: left
 	h2
 		a 
 			color: black
@@ -104,30 +124,22 @@ section#testdays
 			background: none
 			a 
 				color: black
-				
+		&.active
+				border-bottom: solid black .2rem
+	h4
+		color: black
+		font-size: 1.5rem
+		margin: .5rem 0 0
+
 	p 
 		color: black
-	
-
-	
-// /*
-//   **********************
-//  * Accordion
-//   **********************
-//  */
- 
-// .accordion 
-// 	section
-// 		overflow-y: hidden
-// 		p 
-// 			z-index: -10
-// 			transition: all 20ms linear
-// 			transform: translateY(-10rem)
-// 			&.active
-// 				transform: translateY(0rem)
-// 		h2 
-// 			z-index: 1
-		 
-
-
-// 	
+		margin-top: 0
+		a 
+			color: black
+			text-decoration: underline
+			&:hover
+				color: black
+				font-weight: bold
+				
+	hr 
+		border-top: solid black .2rem
